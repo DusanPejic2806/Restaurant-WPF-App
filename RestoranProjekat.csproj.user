@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Forme\DodavanjeStola.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Izvestaji.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Magacin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Nalog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Racun.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Restoran.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Forme\DodavanjeStola.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Izvestaji.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Magacin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Nalog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Racun.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Restoran.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

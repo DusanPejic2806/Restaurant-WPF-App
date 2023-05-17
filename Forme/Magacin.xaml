@@ -1,0 +1,93 @@
+﻿<Window x:Name="Artikli" x:Class="RestoranProjekat.Forme.Magacin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestoranProjekat.Forme"
+        mc:Ignorable="d"
+        Title="Magacin" Height="500" Width="650
+        " WindowStartupLocation="CenterScreen" FontFamily="Arial" FontWeight="Bold">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="#FFDA6522" Offset="0.735"/>
+            <GradientStop Color="#FF5F405A" Offset="0.935"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <Grid x:Name="MagacinProzor">
+        <Button x:Name="dodajArtikalButton" Content="Dodaj" HorizontalAlignment="Left" Height="31" Margin="348,63,0,0" VerticalAlignment="Top" Width="107" Click="dodajArtikalButton_Click" IsEnabled="False" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="sifraArtiklaLB" Content="Sifra Artikla" HorizontalAlignment="Left" Margin="348,108,0,0" VerticalAlignment="Top" Width="93" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="nazivArtiklaLB" Content="Naziv Artikla" HorizontalAlignment="Left" Margin="348,138,0,0" VerticalAlignment="Top" Width="93" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="cenaLB" Content="Cena" HorizontalAlignment="Left" Margin="348,167,0,0" VerticalAlignment="Top" Width="93" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="kolicinaLB" Content="Kolicina" HorizontalAlignment="Left" Margin="348,196,0,0" VerticalAlignment="Top" Width="93" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="sifraTB" HorizontalAlignment="Left" Height="26" Margin="446,108,0,0" TextWrapping="Wrap" Text="Sifra" VerticalAlignment="Top" Width="124" IsEnabled="False" Background="#FF42FF00" BorderBrush="#FFE9F513" BorderThickness="2,2,2,2" SelectionBrush="#FFF1FF00" SelectionTextBrush="#FFABFF00">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="nazivTB" HorizontalAlignment="Left" Height="26" Margin="446,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" IsEnabled="False" Background="#FF42FF00" BorderBrush="#FFE9F513" BorderThickness="2,2,2,2" SelectionBrush="#FFF1FF00" SelectionTextBrush="#FFABFF00">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="cenaTB" HorizontalAlignment="Left" Height="26" Margin="446,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" IsEnabled="False" Background="#FF42FF00" BorderBrush="#FFE9F513" BorderThickness="2,2,2,2" SelectionBrush="#FFF1FF00" SelectionTextBrush="#FFABFF00">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="kolicinaTB" HorizontalAlignment="Left" Height="26" Margin="446,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" IsEnabled="False" Background="#FF42FF00" BorderBrush="#FFE9F513" BorderThickness="2,2,2,2" SelectionBrush="#FFF1FF00" SelectionTextBrush="#FFABFF00">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <ListBox x:Name="artikliLista" HorizontalAlignment="Left" Height="414" Margin="28,47,0,0" VerticalAlignment="Top" Width="297" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="artikliLista_Loaded" SelectionChanged="artikliLista_SelectionChanged" Foreground="White" BorderThickness="2,2,2,2" BorderBrush="#FF0032C8">
+            <ListBox.Effect>
+                <DropShadowEffect/>
+            </ListBox.Effect>
+            <ListBox.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF3F80C8" Offset="0.922"/>
+                    <GradientStop Color="#FF2F1FEF" Offset="1"/>
+                </RadialGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <Button x:Name="obrisiArtiklaButton" Content="Obrisi" HorizontalAlignment="Left" Height="31" Margin="460,63,0,0" VerticalAlignment="Top" Width="106" Click="obrisiArtikalButton_Click" IsEnabled="False" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="unesiArtikalButton" Content="Upravljaj Artiklima" HorizontalAlignment="Left" Height="31" Margin="460,27,0,0" VerticalAlignment="Top" Width="107" Click="noviArtikalButton_Click" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="izmeniArtikalButton" Content="Izmeni" HorizontalAlignment="Left" Height="31" Margin="348,27,0,0" VerticalAlignment="Top" Width="107" Click="izmeniArtikalButton_Click" IsEnabled="False" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>

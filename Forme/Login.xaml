@@ -1,0 +1,51 @@
+﻿<Window x:Name="LoginProzor" x:Class="RestoranProjekat.Forme.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestoranProjekat.Forme"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="#FFDA6522" Offset="0.735"/>
+            <GradientStop Color="#FF5F405A" Offset="0.935"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="220" Margin="298,133,0,0">
+            <Label x:Name="usernameLabel" Content="Username" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" FontFamily="Arial" FontWeight="Bold" FontSize="12" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label x:Name="passwordLabel" Content="Password" HorizontalAlignment="Left" Margin="0,31,0,0" VerticalAlignment="Top" Width="85" FontFamily="Arial" FontWeight="Bold" FontSize="12" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <TextBox x:Name="usernameTB" HorizontalAlignment="Left" Height="26" Margin="98,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" Background="#FF42FF00" BorderBrush="#FFE9F513" FontFamily="Arial" SelectionBrush="#FFF1FF00" SelectionTextBrush="#FFABFF00">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <TextBox x:Name="passwordTB" HorizontalAlignment="Left" Height="26" Margin="98,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" Background="#FF42FF00" BorderBrush="#FFE9F513" FontFamily="Arial" SelectionBrush="#FFF1FF00" SelectionTextBrush="#FFABFF00">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+
+        </Grid>
+        <Button x:Name="loginButton" Content="Uloguj se" HorizontalAlignment="Left" Height="34" Margin="416,217,0,0" VerticalAlignment="Top" Width="102" Click="loginButton_Click" Background="#FFFFDE00" BorderBrush="#FF2EF31E" FontFamily="Arial" FontWeight="Bold" FontSize="12" BorderThickness="2,2,2,2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="nalogButton" Content="Registruj Se" HorizontalAlignment="Left" Height="34" Margin="298,217,0,0" VerticalAlignment="Top" Width="102" Click="nalogButton_Click" BorderBrush="#FF2EF31E" Background="#FFFFDE00" FontFamily="Arial" FontWeight="Bold" FontSize="12" BorderThickness="2,2,2,2">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>

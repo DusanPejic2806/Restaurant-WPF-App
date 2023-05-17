@@ -1,0 +1,57 @@
+﻿<Window x:Name="RestoranProzor" x:Class="RestoranProjekat.Forme.Restoran"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestoranProjekat.Forme"
+        mc:Ignorable="d"
+         Title="Restoran" Height="520
+        " Width="1000" WindowStartupLocation="CenterScreen" Loaded="RestoranProzor_Loaded" FontFamily="Arial" FontWeight="Bold" ResizeMode="NoResize" Closing="RestoranProzor_Closing">
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="#FF5F405A" Offset="0.939"/>
+            <GradientStop Color="#FFDA6522" Offset="0.735"/>
+            <GradientStop Color="#FF5F405A" Offset="0.935"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <Grid x:Name="grid">
+        <Label x:Name="korsinikLabel" Content="Korisnik" HorizontalAlignment="Left" Height="32" Margin="10,10,0,0" VerticalAlignment="Top" Width="105" Background="#FFFFDE00" BorderBrush="#FF2EF31E" Foreground="Black" Opacity="0.8" BorderThickness="2,2,2,2" FontFamily="Arial" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Button x:Name="DodajSto" Content="Dodaj Sto" HorizontalAlignment="Left" Height="32" Margin="818,36,0,0" VerticalAlignment="Top" Width="112" Click="DodajSto_Click" Opacity="0.8" Background="#FFFFDE00" BorderBrush="#FF2EF31E" Foreground="Black" BorderThickness="2,2,2,2" FontFamily="Arial" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Canvas x:Name="RestoranPrikaz" HorizontalAlignment="Left" Height="425" Margin="123,36,0,0" VerticalAlignment="Top" Width="675">
+            <Canvas.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF2F1FEF" Offset="1"/>
+                    <GradientStop Color="#FF3F80C8" Offset="0.922"/>
+                </RadialGradientBrush>
+            </Canvas.Background>
+        </Canvas>
+        <Button x:Name="SacuvajButton" Content="Sacuvaj Izmene" HorizontalAlignment="Left" Height="32" Margin="818,82,0,0" VerticalAlignment="Top" Width="112" Click="SacuvajButton_Click" Opacity="0.8" Background="#FFFFDE00" BorderBrush="#FF2EF31E" IsEnabled="False" BorderThickness="2,2,2,2" FontFamily="Arial" FontWeight="Bold" FontSize="12">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="artikliButton" Content="Pogledaj Artikle" HorizontalAlignment="Left" Height="32" Margin="818,153,0,0" VerticalAlignment="Top" Width="112" Click="artikliButton_Click" Opacity="0.8" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2" FontFamily="Arial" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="IzvestajiButton" Content="Izveštaji" HorizontalAlignment="Left" Height="32" Margin="818,205,0,0" VerticalAlignment="Top" Width="112" Click="IzvestajiButton_Click" Opacity="0.8" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2" FontFamily="Arial" FontWeight="Bold" FontSize="12">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="IzlogujButton" Content="Izloguj se" HorizontalAlignment="Left" Height="32" Margin="818,429,0,0" VerticalAlignment="Top" Width="112" Click="IzlogujButton_Click" Opacity="0.8" Background="#FFFFDE00" BorderBrush="#FF2EF31E" FontFamily="Arial" FontWeight="Bold" FontSize="12">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>

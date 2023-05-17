@@ -1,0 +1,125 @@
+﻿<Window x:Name="NalogProzor" x:Class="RestoranProjekat.Forme.Nalog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestoranProjekat.Forme"
+        mc:Ignorable="d"
+       Title="Nalog" Height="500" Width="500
+        " WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FontFamily="Arial" FontWeight="Bold">
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="#FFDA6522" Offset="0.735"/>
+            <GradientStop Color="#FF5F405A" Offset="0.935"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <Grid>
+
+        <Grid HorizontalAlignment="Center" Height="182" Margin="0,94,0,0" VerticalAlignment="Top" Width="298">
+            <Label Content="Ime" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2" Background="#FFFFDE00" Margin="2,2,0,0">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label x:Name="prezimeLabel" Content="Prezime" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Background="#FFFFDE00" Margin="2,38,0,0" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label x:Name="usernameCreateLabel" Content="Username" HorizontalAlignment="Left" VerticalAlignment="Center" Width="118" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2" Margin="2,0,0,0">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label x:Name="passwordCreateLabel" Content="Password" HorizontalAlignment="Left" Margin="2,113,0,0" VerticalAlignment="Top" Width="118" Background="#FFFFDE00" BorderThickness="2,2,2,2" BorderBrush="#FF2EF31E">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label x:Name="passwordConfirmLabel" Content="Potvrdi Password" HorizontalAlignment="Left" Margin="0,147,0,0" VerticalAlignment="Top" Width="120" Background="#FFFFDE00" BorderBrush="#FF2EF31E" BorderThickness="2,2,2,2" Height="35" FontSize="12
+                   ">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <TextBox x:Name="imeTB" HorizontalAlignment="Left" Margin="145,10,0,0" TextWrapping="Wrap" Text="Unesite Ime" VerticalAlignment="Top" Width="143" GotFocus="imeTB_Focus" Background="#FF42FF00" BorderBrush="#FFE9F513" BorderThickness="2,2,2,2" SelectionBrush="#FFF1FF00" RenderTransformOrigin="0.5,0.5" SelectionTextBrush="#FFABFF00">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="-0.001" Y="0"/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <TextBox x:Name="prezimeTB" HorizontalAlignment="Left" Margin="145,47,0,0" TextWrapping="Wrap" Text="Unesite Prezime" VerticalAlignment="Top" Width="142" GotFocus="prezimeTB_Focus" Background="#FF42FF00" BorderBrush="#FFE9F513" BorderThickness="2,2,2,2" SelectionBrush="#FFF1FF00" RenderTransformOrigin="0.5,0.5" SelectionTextBrush="#FFABFF00">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <TextBox x:Name="usernameCreateTB" HorizontalAlignment="Left" Margin="145,85,0,0" TextWrapping="Wrap" Text="Unesite Korisnicko Ime" VerticalAlignment="Top" Width="142" GotFocus="usernameCreateTB_Focus" Background="#FF42FF00" BorderBrush="#FFE9F513" BorderThickness="2,2,2,2" SelectionBrush="#FFF1FF00" RenderTransformOrigin="0.5,0.5" SelectionTextBrush="#FFABFF00">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <TextBox x:Name="passwordCreateTB" HorizontalAlignment="Left" Margin="145,119,0,0" TextWrapping="Wrap" Text="Unesite Password" VerticalAlignment="Top" Width="143" GotFocus="passwordCreateTB_Focus" Background="#FF42FF00" BorderBrush="#FFE9F513" BorderThickness="2,2,2,2" SelectionBrush="#FFF1FF00" RenderTransformOrigin="0.5,0.5" SelectionTextBrush="#FFABFF00">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <TextBox x:Name="passwordConfirmTB" HorizontalAlignment="Left" Margin="145,153,0,0" TextWrapping="Wrap" Text="Potvrdite Password" VerticalAlignment="Top" Width="142" GotFocus="passwordConfirmTB_Focus" Background="#FF42FF00" BorderBrush="#FFE9F513" BorderThickness="2,2,2,2" SelectionBrush="#FFF1FF00" RenderTransformOrigin="0.5,0.5" SelectionTextBrush="#FFABFF00">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+
+        </Grid>
+
+        <Button x:Name="kreirajButton" Content="Kreiraj Nalog" HorizontalAlignment="Left" Height="37" Margin="273,308,0,0" VerticalAlignment="Top" Width="126" Click="kreirajButton_Click" Background="#FFFFDE00" BorderThickness="2,2,2,2" BorderBrush="#FF2EF31E">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="ObrisiNalogButton" Content="Obrisi Radnika" HorizontalAlignment="Left" Height="37" Margin="101,308,0,0" VerticalAlignment="Top" Width="126" Click="ObrisiNalogButton_Click" Background="#FFFFDE00" BorderThickness="2,2,2,2" BorderBrush="#FF2EF31E">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>
